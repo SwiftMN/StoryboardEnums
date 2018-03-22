@@ -17,6 +17,7 @@
 		43EEC87F2064659F00BC02B1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEC87E2064659F00BC02B1 /* ThirdViewController.swift */; };
 		43EEC881206465AD00BC02B1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEC880206465AD00BC02B1 /* FourthViewController.swift */; };
 		43EEC8832064664A00BC02B1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EEC8822064664A00BC02B1 /* Login.storyboard */; };
+		43EEC8852064696600BC02B1 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEC8842064696600BC02B1 /* Storyboards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		43EEC87E2064659F00BC02B1 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		43EEC880206465AD00BC02B1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		43EEC8822064664A00BC02B1 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		43EEC8842064696600BC02B1 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		43EEC8762064651C00BC02B1 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				43EEC8842064696600BC02B1 /* Storyboards.swift */,
 				43EEC8822064664A00BC02B1 /* Login.storyboard */,
 			);
 			path = Storyboards;
@@ -174,6 +177,7 @@
 				43EEC87F2064659F00BC02B1 /* ThirdViewController.swift in Sources */,
 				43EEC8792064654800BC02B1 /* LoginViewController.swift in Sources */,
 				43EEC865206464EA00BC02B1 /* AppDelegate.swift in Sources */,
+				43EEC8852064696600BC02B1 /* Storyboards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
