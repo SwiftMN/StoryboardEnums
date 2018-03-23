@@ -10,4 +10,9 @@ import UIKit
 
 final class SecondViewController: UIViewController {
 
+  var stupidThingToSet: String?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
 }

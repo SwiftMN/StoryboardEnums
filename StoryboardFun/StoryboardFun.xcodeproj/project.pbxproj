@@ -105,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43EEC873206464EA00BC02B1 /* Build configuration list for PBXNativeTarget "StoryboardFun" */;
 			buildPhases = (
+				43EEC88620646EDE00BC02B1 /* Storyboards!!!!!!!!! */,
 				43EEC85D206464EA00BC02B1 /* Sources */,
 				43EEC85E206464EA00BC02B1 /* Frameworks */,
 				43EEC85F206464EA00BC02B1 /* Resources */,
@@ -165,6 +166,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43EEC88620646EDE00BC02B1 /* Storyboards!!!!!!!!! */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Storyboards!!!!!!!!!";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Natalie Generator: Determining if generated Swift file is up-to-date.\"\n\n# Adjust path to \"natalie\" binary\n# NATALIE_PATH=\"$PROJECT_DIR/natalie\"\nNATALIE_PATH=\"/usr/local/bin/natalie\"\n\nif [ -f $NATALIE_PATH ]; then\nBASE_PATH=\"$PROJECT_DIR/$PROJECT_NAME/Storyboards\"\nOUTPUT_PATH=\"$BASE_PATH/Storyboards.swift\"\n\nif [ ! -e \"$OUTPUT_PATH\" ] || [ -n \"$(find \"$BASE_PATH\" -type f -name \"*.storyboard\" -newer \"$OUTPUT_PATH\" -print -quit)\" ]; then\necho \"Natalie Generator: Generated Swift is out-of-date; re-generating...\"\n\n/usr/bin/chflags nouchg \"$OUTPUT_PATH\"\n\"$NATALIE_PATH\" \"$BASE_PATH\" > \"$OUTPUT_PATH\"\n/usr/bin/chflags uchg \"$OUTPUT_PATH\"\n\necho \"Natalie Generator: Done.\"\nelse\necho \"Natalie Generator: Generated Swift is up-to-date; skipping re-generation.\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43EEC85D206464EA00BC02B1 /* Sources */ = {

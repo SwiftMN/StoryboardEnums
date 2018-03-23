@@ -34,6 +34,15 @@
                                     <segue destination="xzA-fY-faw" kind="show" identifier="loginToFirst" id="E2p-32-1jQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaX-lv-Iaw">
+                                <rect key="frame" x="166" y="434" width="42" height="30"/>
+                                <state key="normal" title="Magic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="magicPressed:" destination="Spv-zT-bAC" eventType="touchUpInside" id="qlH-zt-2Le"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="LoginViewController"/>
                         <constraints>
@@ -41,6 +50,8 @@
                             <constraint firstItem="eTf-jT-Dqb" firstAttribute="centerY" secondItem="Day-Qx-wMf" secondAttribute="centerY" id="5ID-7A-T6V"/>
                             <constraint firstItem="FMr-WD-Gv2" firstAttribute="top" secondItem="eTf-jT-Dqb" secondAttribute="bottom" constant="34" id="6mf-AD-9hE"/>
                             <constraint firstItem="FMr-WD-Gv2" firstAttribute="centerX" secondItem="eTf-jT-Dqb" secondAttribute="centerX" id="7Mj-6k-JCa"/>
+                            <constraint firstItem="DaX-lv-Iaw" firstAttribute="top" secondItem="FMr-WD-Gv2" secondAttribute="bottom" constant="26" id="bzM-wD-duO"/>
+                            <constraint firstItem="DaX-lv-Iaw" firstAttribute="centerX" secondItem="FMr-WD-Gv2" secondAttribute="centerX" id="skH-pe-pw1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cYD-O9-l98"/>
                     </view>
@@ -102,7 +113,7 @@
         <!--Third-->
         <scene sceneID="CTj-rg-4A5">
             <objects>
-                <viewController storyboardIdentifier="Third" title="Third" id="Z0Z-xl-bxm" customClass="ThirdViewController" customModule="StoryboardFun" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Third" id="Z0Z-xl-bxm" customClass="ThirdViewController" customModule="StoryboardFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mzK-gv-rfS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,13 +171,13 @@
                     <view key="view" contentMode="scaleToFill" id="NBp-dB-g6H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="FourthViewController"/>
                         <viewLayoutGuide key="safeArea" id="EBp-QA-H1T"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWq-nC-dRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2516" y="236"/>
+            <point key="canvasLocation" x="2854" y="221"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mqy-Jb-Ps0">
@@ -190,6 +201,9 @@
     <resources>
         <namedColor name="FirstViewController">
             <color red="1" green="0.5" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FourthViewController">
+            <color red="1" green="0.19300000369548798" blue="0.30899998545646667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="LoginViewController">
             <color red="0.63300001621246338" green="0.23800000548362732" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

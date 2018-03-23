@@ -10,4 +10,10 @@ import UIKit
 
 final class FirstViewController: UIViewController {
 
+  var amazingDataToSetForFirst: String?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+  }
 }
